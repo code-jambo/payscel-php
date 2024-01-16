@@ -1,0 +1,19 @@
+{
+    "name": "payscel/payscel",
+    "description": "payscel's payment sdk for stk payment initiation and query",
+    "require": {
+        "php": "^7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Payscel\\Payscel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Payscel"
+        }
+    ],
+    "minimum-stability": "dev"
+}
