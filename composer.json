@@ -15,5 +15,5 @@
       "name": "Payscel"
     }
   ],
-  "minimum-stability": "dev"
+  "minimum-stability": "stable"
 }
