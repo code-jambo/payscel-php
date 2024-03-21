@@ -1,8 +1,8 @@
 <?php
 
-namespace UnityArray;
+namespace UnityArray\Payscel;
 
-class Payscel
+class PayscelClass
 {
     protected ?string $api_url = "https://payscel.com/api/v1/initiate";
     protected ?string $query_url = "https://payscel.com/api/v1/query";
