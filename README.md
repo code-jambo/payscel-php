@@ -13,7 +13,7 @@ Instantiate the Payscel class:
 ```php
 require_once 'vendor/autoload.php';
 
-use Payscel\Payscel\Payscel;
+use UnityArray\Payscel;
 
 $apiKey = 'YOUR_API_KEY';
 $linkId = 'YOUR_LINK_ID';
