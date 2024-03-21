@@ -31,6 +31,19 @@ $callback = 'https://your-website.com/callback'; // Your callback URL
 $response = $payscel->initiate($msisdn, $amount, $callback);
 
 // Handle the response (usually a JSON object containing checkout details)
+
+// {
+//   +"MerchantRequestID": "db57-40e1-af85-2424fab5a2e697902622"
+//   +"CheckoutRequestID": "ws_CO_21032024215003724757869730"
+//   +"ResponseCode": "0"
+//   +"ResponseDescription": "Success. Request accepted for processing"
+//   +"CustomerMessage": "Success. Request accepted for processing"
+// }
+
+// example 
+
+echo $response->ResponseDescription; // Success. Request accepted for processing
+
 ```
 
 Query the status of a payment:
@@ -42,6 +55,21 @@ $checkoutId = 'CHECKOUT_ID_FROM_INITIATE_RESPONSE';
 $response = $payscel->query($checkoutId);
 
 // Handle the response (usually a JSON object containing payment status)
+
+// {
+//   +"ResponseCode": "0"
+//   +"ResponseDescription": "The service request has been accepted successsfully"
+//   +"MerchantRequestID": "847c-4573-85db-96a68dacad1992169467"
+//   +"CheckoutRequestID": "ws_CO_21032024213641597757869730"
+//   +"ResultCode": "1037"
+//   +"ResultDesc": "DS timeout user cannot be reached"
+// }
+
+// example
+
+echo $response->ResultDesc; // DS timeout user cannot be reached
+
+
 ```
 ### Methods
 - initiate($msisdn, $amount, $callback): Initiates a payment.
