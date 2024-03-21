@@ -2,7 +2,7 @@
 
 namespace UnityArray\Payscel;
 
-class PayscelClass
+class Payscel
 {
     protected ?string $api_url = "https://payscel.com/api/v1/initiate";
     protected ?string $query_url = "https://payscel.com/api/v1/query";
@@ -11,7 +11,6 @@ class PayscelClass
     {
         $this->api_key = $api_key;
         $this->link_id = $link_id;
-
     }
 
     public function initiate($msisdn, $amount, $callback)
@@ -66,7 +65,6 @@ class PayscelClass
             return $response;
         }
     }
-
 
 
 }
