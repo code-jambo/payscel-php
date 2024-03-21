@@ -1,10 +1,11 @@
 {
-  "name": "payscel/payscel",
+  "name": "unityarray/payscel",
   "description": "payscel's payment sdk for stk payment initiation and query",
+  "license": "MIT",
+  "type" : "library",
   "require": {
     "php": ">=7.3"
   },
-  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Payscel\\Payscel\\": "src/"
@@ -12,7 +13,8 @@
   },
   "authors": [
     {
-      "name": "Payscel"
+      "name": "unityarray",
+      "email" : "hello@unityarray.co.ke"
     }
   ]
 }
