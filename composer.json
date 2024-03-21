@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Payscel\\Payscel\\": "src/"
+      "UnityArray\\Payscel\\": "src/"
     }
   },
   "authors": [

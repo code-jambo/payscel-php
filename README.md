@@ -6,7 +6,7 @@ Installation
 Using Composer:
 
 ```
-composer require payscel/payscel
+composer require unityarray/payscel
 ```
 ## Usage
 Instantiate the Payscel class:
