@@ -16,5 +16,6 @@
       "name": "unityarray",
       "email" : "hello@unityarray.co.ke"
     }
-  ]
+  ],
+  "minimum-stability": "stable"
 }

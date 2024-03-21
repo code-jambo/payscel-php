@@ -1,6 +1,6 @@
 <?php
 
-namespace Payscel\Payscel;
+namespace UnityArray;
 
 class Payscel
 {
